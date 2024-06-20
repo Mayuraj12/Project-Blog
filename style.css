@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background:white;
+    background-image: url(images/google-deepmind-_wG-sQ40_H4-unsplash.jpg);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    background:lightcyan;
+    color: black;
+    
+  }
+  .service-body{
+    background-image: url(images/google-deepmind-_wG-sQ40_H4-unsplash.jpg);
+  }
+  h3{
+    text-align: center;
+    font-size: xx-large;
+    padding: 15px;
+  }
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  .container mt-3{
+    display: flex;
+  }
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background:lightcyan;
+    margin-top: 20px;
+    font-size: larger;
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /*for contact section*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+.opacity-75{
+  opacity: 0.75;
+}
+.border {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+  border-color: aqua;
+}
+/*tooltip css*/
+/* Tooltip container */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip button */
+.tooltip-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  color: black;
+}
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: px;
+  
+  /* Positioning and transitions */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the button */
+  left: 50%;
+  margin-left: -80px;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text on hover */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+/*horizontal chart*/
+/* Chart container */
+.chart-container-h {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    justify-content: space-around;
+}
+
+/* Individual bars */
+.bar-1{
+  background-color: brown;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  border-radius: 4px;
+  transition: width 0.3s;
+  margin: 0 5px; /* Added margin between bars */
+
+}
+
+/* Add some hover effect */
+.bar-1:hover {
+  background-color: #45a049;
+}
+/*vertical char*/
+/* Chart container */
+.chart-container-v{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Individual bars */
+.bar {
+  background-color: #4caf50;
+  color: #fff;
+  width: 15%;
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: height 0.3s;
+}
+
+/* Add some hover effect */
+.bar:hover {
+  background-color: #45a049;
+}
+/*pie char*/
+
+.pie-chart {
+  width: 400px;
+  height: 400px;
+  background: conic-gradient(
+      #4caf50 0% 20%,  /* Slice 1 */
+      #ff9800 20% 55%, /* Slice 2 */
+      #2196f3 55% 80%, /* Slice 3 */
+      #f44336 80% 100% /* Slice 4 */
+  );
+  border-radius: 50%;
+  position: relative;
+}
+
+.pie-chart::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color:lightskyblue;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+ }
+    
+/*bouncing ball*/
+
+.ball-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.box {
+  width: 300px;
+  height: 350px;
+  background-color: burlywood;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden; 
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  
+}
+
+@keyframes bounce {
+  0%, 100% {
+      bottom: 0%;
+  }
+  50% {
+      bottom: 72%;
+  }
+}
+
+.box:hover .ball {
+  animation-play-state: running;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
