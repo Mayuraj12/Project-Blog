@@ -198,13 +198,12 @@
 
 /* Individual bars */
 .bar-1{
-  background-color: brown;
+  background-color:lightcoral;
   color: #fff;
-  padding: 10px;
-  text-align: right;
+  margin-bottom: 20px;
   border-radius: 4px;
-  transition: width 0.3s;
-  margin: 0 5px; /* Added margin between bars */
+  text-align: right;
+  padding: 10px;
 
 }
 
@@ -229,7 +228,7 @@
 }
 
 /* Individual bars */
-.bar {
+.bar{
   background-color: #4caf50;
   color: #fff;
   width: 15%;
